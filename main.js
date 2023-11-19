@@ -27,7 +27,7 @@ app.post("/api/transcribe", async (req, res) => {
         if (!link) {
             return res.status(400).json({ error: "Missing 'link' parameter in the request body." });
         }
-        const accessKey = "j3NH+VKD0PkymEmVUwxmkhdnuJ8jy+OgahhHquZALM9sWYl8ZLidVw==";
+        const accessKey = "Your-Access-Key";
         const handle = new Leopard(accessKey);
 
         const remoteAudioFileUrl = link;
